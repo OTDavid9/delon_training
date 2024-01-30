@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>AI Assistant</h1>
+    <form method="post" action="/">
+        <label for="user_query">Enter your query:</label>
+        <input type="text" id="user_query" name="user_query" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    {% if user_query %}
+        <p>User Query: {{ user_query }}</p>
+    {% endif %}
+
+    {% if response_content %}
+        <p>Assistant's Response: {{ response_content }}</p>
+    {% endif %}
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+</head>
+<body>
+    <h1>AI Assistant</h1>
+    <form method="post" action="/">
+        <label for="user_query">Enter your query:</label>
+        <input type="text" id="user_query" name="user_query" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    {% if user_query %}
+        <p>User Query: {{ user_query }}</p>
+    {% endif %}
+
+    {% if response_content %}
+        <p>Assistant's Response: {{ response_content }}</p>
+    {% endif %}
+</body>
+</html> -->

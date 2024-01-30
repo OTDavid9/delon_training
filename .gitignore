@@ -1,0 +1,18 @@
+# environment
+
+.env
+.env/
+/.env/
+
+# Python Packages
+__pycache__/
+
+# Virtual Environment
+venv/
+/venv/
+/venv
+
+# VS Code
+.vscode/
+/.vscode/
+/.vscode
