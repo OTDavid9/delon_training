@@ -9,11 +9,7 @@ functions = FUNCTIONS_SPEC.copy()
 agent = Smart_Agent(persona=PERSONA,functions_list=AVAILABLE_FUNCTIONS, functions_spec=functions)
 
 # OpenAI API Key 
-client = AzureOpenAI(
-    azure_endpoint = "https://tunji-service.openai.azure.com/openai/deployments/tunji-model/chat/completions?api-version=2023-07-01-preview",
-    api_key = "1c5f09b472cd44cf8d28542f9ae25c03",
-    api_version = "2023-07-01-preview"
-)
+
 Conversation=[{'role':'system','content':PERSONA},]
 print(Conversation)
 
