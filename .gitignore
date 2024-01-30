@@ -3,3 +3,9 @@
 
 # Virtual Environmet
 venv/
+/venv/
+
+# Packages
+__pycache__/
+
+/__pycache__/
